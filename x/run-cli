@@ -1,0 +1,10 @@
+#!/bin/sh
+
+cargo run --bin birthday_greeting_cli -- \
+    -i employee.csv \
+    --smtp-server localhost \
+    --smtp-port 1025 \
+    --smtp-username "ben" \
+    --smtp-password "********" \
+    --dry-run \
+    --from "Ben <noreply@ben.org>"
